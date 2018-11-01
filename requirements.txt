@@ -7,4 +7,3 @@ Werkzeug==0.12.2
 click==6.7
 gunicorn==19.7.1
 itsdangerous==0.24
-sqlite3==2.6.0
