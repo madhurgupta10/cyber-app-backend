@@ -1,0 +1,10 @@
+Flask==0.12.2
+requests==2.16.5
+beautifulsoup4==4.6.0
+Jinja2==2.9.6
+MarkupSafe==1.0
+Werkzeug==0.12.2
+click==6.7
+gunicorn==19.7.1
+itsdangerous==0.24
+sqllite3==3.0
