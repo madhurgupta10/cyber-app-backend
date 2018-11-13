@@ -9,7 +9,7 @@ class News:
         ctx.verify_mode = ssl.CERT_NONE
         page_no = str(int(random.randrange(1,20,1)))
         build_url = 'https://newsapi.org/v2/everything?q=Cyber%20Security&apiKey=cbdc18ab9da94004b749731e335b6e40&page='+page_no
-        url = urlopen(,context=ctx)
+        url = urlopen(build_url,context=ctx)
         self.obj = json.load(url) 
 
 
