@@ -1,14 +1,15 @@
 from urllib.request import urlopen
 import json
 import ssl
-
+import random
 class News:
     def __init__(self):
         ctx = ssl.create_default_context()
         ctx.check_hostname = False
         ctx.verify_mode = ssl.CERT_NONE
-
-        url = urlopen('https://newsapi.org/v2/everything?q=Cyber%20Security&apiKey=cbdc18ab9da94004b749731e335b6e40',context=ctx)
+        page_no = str(int(random.randrange(1,20,1)))
+        build_url = 'https://newsapi.org/v2/everything?q=Cyber%20Security&apiKey=cbdc18ab9da94004b749731e335b6e40&page='+page_no
+        url = urlopen(,context=ctx)
         self.obj = json.load(url) 
 
 
